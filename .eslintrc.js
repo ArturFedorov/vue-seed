@@ -5,15 +5,19 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/standard',
-    '@vue/typescript/recommended'
+    'eslint:recommended',
+    '@vue/typescript'
   ],
-  parserOptions: {
-    ecmaVersion: 2020
-  },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'indent': ['warn', 2],
+    'quotes': ['warn', 'single'],
+    'comma-dangle': ['warn', 'never'],
+    'prefer-arrow-callback': 'error'
+  },
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
   },
   overrides: [
     {

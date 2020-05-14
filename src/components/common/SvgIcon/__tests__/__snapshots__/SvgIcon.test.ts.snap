@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SvgIcon.vue Renders correctly 1`] = `
+<svg
+  class="svg-icon svg-icon-tick"
+  height="10"
+  width="10"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    tick
+  </title>
+   
+  <use
+    href=""
+  />
+</svg>
+`;

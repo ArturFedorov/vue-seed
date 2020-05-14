@@ -1,0 +1,15 @@
+.fade-slide-down {
+  &-enter-active,
+  &-leave-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all .5s ease-in-out;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    transition: all .5s ease-in-out;
+  }
+}

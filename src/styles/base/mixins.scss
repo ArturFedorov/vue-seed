@@ -1,0 +1,117 @@
+@mixin resetBtn {
+  box-shadow: none;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  display: inline-block;
+}
+
+@mixin basicTransition {
+  transition: all .3s ease-in-out;
+}
+
+@mixin basicBoxShadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+
+@mixin visuallyHidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@mixin defaultOutline {
+  outline: $util dotted 1px;
+}
+
+@mixin resetA {
+  border-bottom: 0;
+  color: inherit;
+
+  &:hover {
+    border-bottom-color: inherit;
+  }
+}
+
+$custom-scroll-width: 7px;
+
+@mixin customScroll {
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: $custom-scroll-width;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gray-194;
+    border-radius: $custom-scroll-width;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: $custom-scroll-width;
+  }
+}
+
+@mixin baseColorGradient {
+  background-image: linear-gradient(116deg, $base-color, $base-color-darker 100%);
+}
+
+@mixin warningGradient {
+  background-image: linear-gradient(116deg, $warning-color, $warning-color-darker 100%);
+}
+
+@mixin dangerGradient {
+  background-image: linear-gradient(116deg, $danger-color, $danger-color-darker 100%);
+}
+
+//dashboard gradients
+@mixin connectivityGradient {
+  color: $white;
+  background-image: linear-gradient(125deg, $cyan-dark, $magenta-strong 100%);
+}
+
+@mixin devicesGradient {
+  color: $white;
+  background-image: linear-gradient(125deg, $base-color, $pink-dark 100%);
+}
+
+@mixin platformGradient {
+  color: $white;
+  background-image: linear-gradient(125deg, #360033, #0B7C93 100%);
+}
+
+@mixin dashboardGradient {
+  color: $white;
+  background-image: linear-gradient(130deg, $violet-dark, $orange-vivid 100%);
+}
+
+@mixin diagonalGradient($color1, $color2) {
+  background-image: linear-gradient(125deg, $color1, $color2 100%);
+}
+
+@mixin statusDanger {
+  color: $white;
+  @include dangerGradient;
+
+  .svg-icon {
+    fill: $white;
+  }
+}
+
+@mixin statusWarning {
+  @include warningGradient;
+}
+
+@mixin statusBase {
+  color: $white;
+  @include baseColorGradient;
+
+  .svg-icon {
+    fill: $white;
+  }
+}

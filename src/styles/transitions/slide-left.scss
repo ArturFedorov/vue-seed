@@ -1,0 +1,11 @@
+.slide-left {
+  &-enter-active,
+  &-leave-active {
+    @include basicTransition;
+  }
+
+  &-enter,
+  &-leave-to {
+    transform: translateX(-100%);
+  }
+}

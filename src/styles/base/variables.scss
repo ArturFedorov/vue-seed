@@ -1,0 +1,95 @@
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$dark: #262626;
+
+$gray-38: #262626;
+$gray-56: #383838;
+$gray-117: #757575;
+$gray-147: #939393;
+$gray-178: #B2B2B2;
+$gray-184: #B8B8B8;
+$gray-194: #C2C2C2;
+$gray-199: #C7C7C7;
+$gray-208: #D0D0D0;
+$gray-220: #DCDCDC;
+$gray-230: #E6E6E6;
+$gray-237: #EDEDED;
+$gray-248: #F8F8F8;
+
+$brand: #E20074;
+$brand-dark: darken($brand, 10%);
+$brand-light: lighten($brand, 25%);
+
+$base-color: #218076;
+$base-color-darker: #11403B;
+$base-color-light: lighten($base-color, 20%);
+
+$cyan-dark: #0B8793;
+$magenta-strong: #B30CA9;
+$orange-vivid: #EE7913;
+$pink-dark: #3B1322;
+$violet-dark: #5614B0;
+
+$red: #CB0830;
+$green: #46A800;
+$green-dark: #219E4F;
+$warning-color: #FECB00;
+$warning-color-darker: #FFA200;
+
+$danger-color: #D90000;
+$danger-color-darker: #9E0808;
+
+$blue: #0091ac;
+$dark-blue: #007FAF;
+$util: #3216B0;
+
+// Building Units
+$building-unit: 8px;
+$building-unit-x0_5: $building-unit / 2; // 4px
+$building-unit-x2: $building-unit * 2; // 16px
+$building-unit-x3: $building-unit * 3; // 24px
+$building-unit-x4: $building-unit * 4; // 32px
+$building-unit-x5: $building-unit * 5; // 40px
+$building-unit-x6: $building-unit * 6; // 48px
+$building-unit-x7: $building-unit * 7; // 56px
+$building-unit-x8: $building-unit * 8; // 64px
+$building-unit-x9: $building-unit * 9; // 72px
+$building-unit-x10: $building-unit * 10; // 80px
+$building-unit-x11: $building-unit * 11; // 88px
+$building-unit-x12: $building-unit * 12; // 96px
+
+// Transition
+$transition-duration-default: .3s;
+
+// Typography
+$font-family: 'TeleGrotesk Next';
+
+// font-size
+$font-size-base: 18px;
+
+// line-height
+$line-height-base: 1.2;
+
+// font-weights
+$font-thin: 100;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-ultra: 900;
+
+$border-radius: 3px;
+$border-radius-big: 16px;
+
+
+
+// media queries
+$mobile: 'max-width: 767px';
+$tablet: 'max-width: 1023px';
+$desktop: 'max-width: 1279px';
+$wide-desktop: 'max-width: 1499px';
+$large-desktop: 'max-width: 1799px';
+
+$from-desktop: 'min-width: 1024px';
+$from-wide-desktop: 'min-width: 1500px';
+

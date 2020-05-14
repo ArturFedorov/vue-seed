@@ -1,0 +1,64 @@
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-regular;
+  src: url($font_path + 'TeleGroteskNext-Regular.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-medium;
+  src: url($font_path + 'TeleGroteskNext-Medium.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-bold;
+  src: url($font_path + 'TeleGroteskNext-Bold.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 900;
+  src: url($font_path + 'TeleGroteskNext-Ultra.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-Ultra.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: bold;
+  src: url($font_path + 'TeleGroteskNext-BoldItalic.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: 500;
+  src: url($font_path + 'TeleGroteskNext-MediumItalic.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: normal;
+  src: url($font_path + 'TeleGroteskNext-RegularItalic.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 100;
+  src: url($font_path + 'TeleGroteskNext-Thin.woff2') format('woff2'),
+    url($font_path + 'TeleGroteskNext-Thin.woff') format('woff');
+}
+

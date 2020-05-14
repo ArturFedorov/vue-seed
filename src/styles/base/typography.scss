@@ -1,0 +1,118 @@
+body {
+  font-family: $font-family, Arial, sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-regular;
+  line-height: $line-height-base;
+  color: $dark;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+  font-weight: $font-bold;
+  margin: 0 0 .6em;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  font-weight: $font-bold;
+  margin: 0 0 .47em;
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+  font-weight: $font-bold;
+  margin: 0 0 .53em;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  font-weight: $font-bold;
+  margin: 0 0 .3em;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: $font-bold;
+  margin: 0 0 .4em;
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+  font-weight: $font-bold;
+  margin: 0 0 8px;
+}
+
+a {
+  color: $base-color;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  @include basicTransition;
+
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+p {
+  margin: 1em 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+
+.base-list {
+  li {
+    position: relative;
+    padding-left: $building-unit-x2;
+    margin-bottom: $building-unit-x0_5;
+
+    &:before {
+      content: '';
+      border-radius: 50%;
+      background-color: $base-color;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      left: 0;
+      top: .4em;
+    }
+  }
+}
+
+::selection {
+  background: $util;
+  color: $white;
+}
+
+a,
+button {
+  &:focus {
+    @include defaultOutline;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}

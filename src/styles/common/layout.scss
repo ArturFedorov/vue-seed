@@ -1,0 +1,17 @@
+// Keeping the Footer at the bottom
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; //headerBar main footer(optional)
+  grid-template-columns: 100%;
+
+  &.is-with-bars {
+    grid-template-rows: auto auto 1fr auto; //headerMain headerBar main footer
+  }
+}
