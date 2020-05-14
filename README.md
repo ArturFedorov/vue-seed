@@ -1,28 +1,44 @@
-# marketplace
+# Marketplace
 
 ## Project setup
 ```
-npm install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
+```
+
+### Lints and fixes TypeScript
+```
+yarn lint
+yarn lint-fix
+```
+
+### Lints and fixes SCSS
+```
+yarn stylelint-fix
 ```
 
 ### Run your unit tests
 ```
-npm run test:unit
+yarn test:unit
 ```
 
-### Lints and fixes files
+### Run style guide
 ```
-npm run lint
+yarn styleguide
+```
+
+### Build style guide
+```
+yarn styleguide:build
 ```
 
 ### Customize configuration
